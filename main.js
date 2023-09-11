@@ -1,6 +1,7 @@
 const addBookButton = document.getElementById("addBookButton");
 const modal = document.getElementById("modal");
 const confirmBtn = modal.querySelector("#confirmBtn");
+const cancel = document.getElementById("cancel");
 
 const myLibrary = [];
 
@@ -66,4 +67,9 @@ addBookButton.addEventListener("click", () => {
 document.getElementById("addBookForm").addEventListener("submit", function (e) {
   e.preventDefault();
   addBookToLibrary();
+});
+
+cancel.addEventListener("click", (e) => {
+  e.preventDefault();
+  modal.close();
 });
