@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <dialog class="modal" id="modal">
+        <form class="modalContent" id="addBookForm">
+          <h1>ADD NEW BOOK</h1>
+          <input id="title" placeholder="Book title" type="text" />
+          <input id="author" placeholder="Author" type="text" />
+          <input id="pages" placeholder="Nr. of pages" type="number" />
+          <div id="checkBox">
+            <div class="checkBox">
+              <label>Did you read this book? :</label>
+              <input type="checkbox" id="read" name="read" value="yes" />
+            </div>
+          </div>
+          <div class="modalButtons">
+            <button value="cancel" formmethod="dialog">Cancel</button>
+            <button id="confirmBtn" value="default" type="submit">
+              Confirm
+            </button>
+          </div>
+        </form>
+      </dialog>
+      <button class="addBookButton" id="addBookButton">Add Book</button>
+      <div id="libraryContainer"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
